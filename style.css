@@ -1,0 +1,273 @@
+:root {
+    --ubuntu: 'Ubuntu', sans-serif;
+    --lora: 'Lora', serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: unset;
+    padding: unset;
+}
+body {
+    font-family: 'Lora', serif;
+    /* font-family: 'Ubuntu', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    */
+} 
+
+/* Header Section starts here*/
+header {
+    background: #F8F8F8;
+    padding: 4rem 0;
+}
+
+main {
+    margin-bottom: 4rem;
+}
+
+.header-text {
+    margin-right: 1rem;
+}
+
+.nav-bar {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link-text {
+    margin-right: 1.2rem;
+}
+
+.link {
+    color: #717171;
+    text-decoration: none;
+    font-family: var(--ubuntu);
+    font-weight: 700;
+}
+
+.link:hover, .link:active {
+    color: #143774;
+}
+
+.active {
+    border-bottom: #717171 2px solid;
+    padding-bottom: 0.2em;
+}
+
+.header-main-text {
+    color: #143774;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.header-sub-text {
+    color: #1792D2;
+    font-family: var(--ubuntu);
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 2rem 0;
+    }
+    .header-text {
+        margin-bottom: 1rem;
+    }
+    .nav-bar, .nav-link {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-link {
+        margin-top: 1.5rem;
+    }
+    .content {
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    img {
+        width: 100%;
+    }
+    .link {
+        font-size: 1rem;
+    }
+}
+/* Header Section ends here*/
+
+/* Layout */
+@media (min-width: 650px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        width: 60%;
+    }
+    aside {
+        width: 33%;
+    }
+}
+
+.content {
+    max-width: 650px;
+    /* display: flex; */
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+
+}
+
+.sub-content, .other-images {
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.content-date {
+    color: #707070;
+    font-family: var(--open-sans);
+    margin: 1rem 0 0.75rem;
+    font-size: 0.85rem;
+}
+
+.content-title {
+    color: #143774;
+    font-size: 1.5rem;
+    font-family: var(--lora);
+    font-weight: 400;
+    margin-right: 0.5rem;
+}
+
+.content-content {
+    font-size: 1.1rem;
+    font-family: var(--ubuntu);
+    color: #707070;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.content-span {
+    font-weight: 700;
+}
+.content-span2 {
+    color: #1792D2;
+    text-decoration: underline;
+    font-weight: 400;
+}
+.continue-reading {
+    color: #1792D2;
+    font: var(--ubuntu);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.cr-link {
+    text-decoration: none;
+    color: #1792D2;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.cr-border {
+    border-bottom: 1px solid #717171;
+    padding-bottom: 1.5rem;
+}
+
+.other-images {
+    margin-top: 2rem;
+}
+.sub-content-flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 0.5em;
+}
+.content-date {
+    margin-top: 0.4rem;
+}
+.aside {
+    padding: 2.5rem 1rem 1rem ;
+    border: 25px #EBEBEB solid;
+}
+
+.about-me {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-me-text {
+    color: #4E6996;
+}
+
+.recent-posts {
+    color: #143774;
+    font: var(--ubuntu);
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+}
+
+.recent-post-img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    margin: 1.25rem 0;
+}
+.recent-post-text {
+    font: var(--lora);
+    color: #143774;
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #4E6996;
+}
+.aside-no-border {
+    border: none;
+}
+.aside-2 {
+    margin-top: 4rem;
+}
+
+/* Layout */
+
+/* footer */
+footer{
+    background: #143774;
+    text-align: center; 
+    font: var(--ubuntu);
+    color: #93A3BF;
+    padding: 3rem 0;
+}
+.footer-header {
+    font-weight: 900;
+}
+.footer-text { 
+    font-size: 0.9rem; 
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.footer-text a {
+    color: hsl(227, 33%, 63%); 
+    text-decoration: none;
+}
+.copyright {
+    font-size: 0.75rem; 
+}
+/* footer */
